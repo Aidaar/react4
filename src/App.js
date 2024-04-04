@@ -26,6 +26,10 @@ const TodoList = () => {
 			setNewTask("");
 		}
 	}
+	 
+	const handleInputChange = (event) => {
+		setNewTask(event.target.value)
+	}
 
 	return (
 		<div>
