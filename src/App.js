@@ -11,6 +11,10 @@ const TodoList = () => {
 		}
 	}
 
+	const handleEditTask = (index) => {
+		setEditingTask(index);
+		setNewTask(tasks[index]);
+	}
 
 
 	return (
