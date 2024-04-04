@@ -17,6 +17,16 @@ const TodoList = () => {
 	}
 
 
+	const handleSaveTask = () => {
+		if(newTask) {
+			const updateTasks = [...tasks]
+			updateTasks[editingTask] = newTask;
+			setTasks(updateTasks);
+			setEditingTask(null);
+			setNewTask("");
+		}
+	}
+
 	return (
 		<div>
 			<h1>To Do List</h1>
